@@ -1,13 +1,13 @@
 from openai import OpenAI
 import pandas as pd
+from prompt_reader import load_prompts
 
-client = OpenAI()
+with open("ChatAPI.txt", "r", encoding="utf-8") as f:
+    api_key = f.read().strip()
 
-prompts = [
-    "Write a 300-word essay about the importance of curiosity in science.",
-    "Discuss the role of social media in modern political movements.",
-    "Explain how urbanization affects biodiversity."
-]
+client = OpenAI(api_key=api_key)
+
+prompts = load_prompts()
 
 data = []
 
@@ -15,7 +15,7 @@ for i, prompt in enumerate(prompts, 1):
     print(f"Generating essay {i}/{len(prompts)}...")
     
     response = client.chat.completions.create(
-        model="gpt-5",  # You can use gpt-4o or gpt-5 depending on access
+        model="gpt-3.5-turbo",  # You can use gpt-4o or gpt-5 depending on access
         messages=[
             {"role": "system", "content": "You are an expert essay writer."},
             {"role": "user", "content": prompt}
