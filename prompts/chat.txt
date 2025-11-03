@@ -1,0 +1,17 @@
+You will generate one essay that is part of a larger dataset. Therefore it is of the utmost importance you adhere to the following output format: Provide only the essay text itself. Do not include a title, section headings, or any conversational introduction or conclusion.
+Write an essay of 800–1000 words in clear, formal English responding to the following question:
+"How should societies balance the rapid advancement of artificial intelligence with the preservation of human values, creativity, and employment?"
+Your essay should:
+Present a clear thesis and logically structured argument.
+
+
+Consider multiple perspectives, including ethical, economic, and cultural implications.
+
+
+Reference historical or contemporary examples where appropriate.
+
+
+Conclude with a reasoned proposal or prediction for the next 10–20 years.
+
+
+You may use any style of argumentation (analytical, persuasive, reflective, etc.), but maintain a coherent academic tone. Avoid bullet points — write in continuous prose.
