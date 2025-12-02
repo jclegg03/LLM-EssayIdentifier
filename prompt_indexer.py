@@ -34,11 +34,11 @@ def compress_dataset(
     encoding_df = pd.DataFrame(encoding_rows).sort_values("id")
 
     # Convert main dataset to id + essay only
-    df["id"] = df["prompt"].map(prompt_to_id)
-    compressed_df = df[["id", "essay"]]
+    df["prompt"] = df["prompt"].map(prompt_to_id)
+    # compressed_df = df[["id", "essay"]]
 
     # Write outputs
-    compressed_df.to_csv(output_file, index=False)
+    df.to_csv(output_file, index=False)
     encoding_df.to_csv(encoding_file, index=False)
 
     print(f"✅ Compressed dataset written to {output_file}")
