@@ -35,7 +35,7 @@ def compress_dataset(
 
     # Convert main dataset to id + essay only
     df["prompt"] = df["prompt"].map(prompt_to_id)
-    # compressed_df = df[["id", "essay"]]
+    df = df[["essay", "prompt"]]
 
     # Write outputs
     df.to_csv(output_file, index=False)
