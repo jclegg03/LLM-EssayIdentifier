@@ -1,4 +1,3 @@
-import time
 import pandas as pd
 import argparse
 from openai import OpenAI

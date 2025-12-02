@@ -44,4 +44,4 @@ def compress_dataset(
     print(f"✅ Compressed dataset written to {output_file}")
     print(f"🔎 Prompt → ID mapping written to {encoding_file}")
 
-compress_dataset("test.csv", "test.csv", "encoding.csv")
+compress_dataset("essays.csv", "essays.csv", "encoding.csv")
