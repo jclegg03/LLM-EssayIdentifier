@@ -27,12 +27,12 @@ def load_prompts(prompt_dir="prompts"):
         if content:
             prompts.append(content)
         else:
-            print(f"⚠️ Skipping empty file: {filename}")
+            print(f"!! Skipping empty file: {filename}")
 
     if not prompts:
         raise ValueError(f"No valid prompt files found in '{prompt_dir}'.")
 
-    print(f"✅ Loaded {len(prompts)} prompts from '{prompt_dir}'")
+    print(f"# Loaded {len(prompts)} prompts from '{prompt_dir}'")
     return prompts
 
 
