@@ -1,4 +1,3 @@
-You will generate one essay that is part of a larger dataset. Therefore it is of the utmost importance you adhere to the following output format: Provide only the essay text itself. Do not include a title, section headings, or any conversational introduction or conclusion.
 Write a 500-750 word essay on the following topic:
 "The Double-Edged Sword of Connectivity: How Modern Technology Has Transformed Human Relationships"
 In your essay, you should:
