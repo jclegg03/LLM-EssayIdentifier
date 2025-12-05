@@ -46,7 +46,7 @@ try:
                     {"role": "user", "content": prompt}
                 ],
                 max_tokens=2000,
-                temperature=0.8
+                temperature=0.7
             )
 
             essay = response.choices[0].message.content.strip()

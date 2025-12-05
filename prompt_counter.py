@@ -18,4 +18,4 @@ def count_essays_by_prompt(csv_file):
 # Example usage:
 # essay_counts = count_essays_by_prompt("essays.csv")
 
-print(count_essays_by_prompt("essays.csv"))
+print(count_essays_by_prompt("more_random_essays.csv"))
