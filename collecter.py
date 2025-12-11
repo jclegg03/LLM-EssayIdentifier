@@ -10,10 +10,11 @@ import pandas as pd
 
 def main():
     # Change these if needed
-    folder_names = [str(i) for i in range(1, 6)]
+    folder_names = ['chat', 'claude']
     source_filename = "essays.csv"
     output_filename = "essays_all.csv"  # central merged file
     output_path = os.path.join(os.getcwd(), output_filename)
+    index = 0
 
     frames = []
     for folder in folder_names:
@@ -24,7 +25,9 @@ def main():
         try:
             # Adjust encoding or sep if necessary, e.g., encoding='utf-8-sig', sep=';'
             df = pd.read_csv(csv_path)
+            df['llm'] = index
             frames.append(df)
+            index += 1
             print(f"[OK] Loaded {csv_path} — {len(df)} rows.")
         except Exception as e:
             print(f"[ERROR] Failed reading {csv_path}: {e}")
