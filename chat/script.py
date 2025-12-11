@@ -1,7 +1,7 @@
 import pandas as pd
 import argparse
 from openai import OpenAI
-from ../prompt_reader import load_prompts
+from prompt_reader import load_prompts
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description="Generate essays from prompts with rate limiting and crash safety.")
